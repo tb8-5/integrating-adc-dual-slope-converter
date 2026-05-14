@@ -44,6 +44,30 @@ The ADC was organized into four main blocks:
 4. **Comparator output stage**  
    An LM311 comparator detects when the integrator output crosses zero and produces the output pulse.
 
+## Oscilloscope Results
+
+### Reset and Timing Waveform
+
+![Reset timing waveform](images/reset_timing_waveform.png)
+
+This waveform shows the ADC timing sequence, including reset and integration control behavior.
+
+### Dual-Slope ADC Operation
+
+![Dual-slope ADC operation](images/dual_slope_adc_operation.png)
+
+This waveform shows the integrator ramp behavior during input integration and reference integration.
+
+### Pulse Width Measurement
+
+![Pulse width measurement at 1.799 ms](images/pulse_width_1p799ms.png)
+
+This measurement shows a VPULSE width of approximately 1.799 ms.
+
+![Pulse width measurement at 9.813 ms](images/pulse_width_9p813ms.png)
+
+This measurement shows a VPULSE width of approximately 9.813 ms near the high end of the measured input range.
+
 ## Key Results
 
 - Verified the reset, input integration, and reference integration timing sequence.
